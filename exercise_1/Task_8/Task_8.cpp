@@ -19,7 +19,7 @@ int main() {
       cin.ignore(100000, '\n');
     }
 
-    int list [n];
+    int* list = new int[n];
 
     for(int i = 0; i < n; ++i) {
       cout << "Введите значение коэффициента с номером " << i << endl;
@@ -37,6 +37,8 @@ int main() {
       sum += term * list[i];
       term *= -2;
     }
+
+    delete[] list;
 
     cout << "Сумма ряда равна " << sum << endl;
     cout << "Желаете закончить программу? (y or n)" << endl;
