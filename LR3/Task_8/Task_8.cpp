@@ -7,7 +7,7 @@ int main() {
   cout << "Суть задания: Вычислить сумму ряда\n";
   cout << "Задание выполнил: Кудрицкий Константин\n";
 
-  int n, term;
+  int n, term, value;
   long sum;
   char answer;
 
@@ -19,26 +19,20 @@ int main() {
       cin.ignore(100000, '\n');
     }
 
-    int* list = new int[n];
-
-    for(int i = 0; i < n; ++i) {
-      cout << "Введите значение коэффициента с номером " << i << endl;
-      while(!(cin >> list[i])) {
-        cout << "Введите корректное значение" << endl;
-        cin.clear();
-        cin.ignore(100000, '\n');
-      }
-    }
-
     sum = 0;
     term = 1;
 
     for(int i = 0; i < n; ++i) {
-      sum += term * list[i];
+      cout << "Введите значение коэффициента с номером " << i << endl;
+      while(!(cin >> value)) {
+        cout << "Введите корректное значение" << endl;
+        cin.clear();
+        cin.ignore(100000, '\n');
+      }
+
+      sum += term * value;
       term *= -2;
     }
-
-    delete[] list;
 
     cout << "Сумма ряда равна " << sum << endl;
     cout << "Желаете закончить программу? (y or n)" << endl;

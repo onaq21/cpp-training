@@ -99,7 +99,7 @@ int main() {
 
       for (int i = 0; i < p; ++i) {
         int k = order / 4;
-        
+
         for (int j = 0; j < k; ++j) {
           int temp = array[i * order + j];
           array[i * order + j] = array[(i + p) * order + j];

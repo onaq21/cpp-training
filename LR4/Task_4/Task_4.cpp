@@ -78,10 +78,10 @@ int main() {
 
     for(int i = 0; i < size; ++i) {
       switch (max_diag) {
-        case 1: 
+        case 1:
           x1 = i, y1 = i, z1 = i;
           break;
-        case 2: 
+        case 2:
           x1 = i, y1 = i, z1 = size - 1 - i;
           break;
         case 3:
@@ -94,9 +94,9 @@ int main() {
 
       cout << "(" << x1 << " " << y1 << " " << z1 << ") = " << Get(array, size, x1, y1, z1) << ", ";
     }
-    
+
     cout << "\nThe largest sum is " << max_sum << endl;
-    
+
     delete[] array;
 
     cout << "Exit the program? (y or n)" << endl;

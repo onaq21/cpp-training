@@ -41,15 +41,11 @@ int main() {
     char* array = new char[rows * columns];
     count = 0;
 
-    cout << "Fill the field: '.' is empty space, '*' is a bomb." << endl; 
+    cout << "Fill the field: '.' is empty space, '*' is a bomb." << endl;
 
     for (int i = 0; i < rows; ++i) {
       for (int j = 0; j < columns; ++j) {
-        cout << "Square at row " << i << ", column " << j << endl;
-        while(!(cin >> value) || (value != '.' && value != '*')) {
-          InvalidInput();
-        }
-        array[i * columns + j] = value;
+        array[i * columns + j] = (rand() % 3 == 0) ? '*' : '.';
       }
     }
 

@@ -30,12 +30,7 @@ int main() {
   char answer;
 
   do {
-    cout << "Enter the number of elements in the array(max " << kMaxSize << "):"<< endl;
-    while(!(cin >> size) || size <= 0 || size > kMaxSize) {
-      cout << "Invalid input, please try again" << endl;
-      cin.clear();
-      cin.ignore(1000000, '\n');
-    }
+    size = 10;
 
     int array[size];
     neg_count = 0;
