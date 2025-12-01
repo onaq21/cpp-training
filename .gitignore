@@ -26,10 +26,23 @@
 *.a
 *.lib
 
+# Ignore binaries
+Task_[0-9]
+Task_10
+Task_11
+Task_12   
+
+# Ignore common build artifacts
+*.out
+.vscode/
+*.dSYM/Contents
+
 # Executables
 *.exe
-*.out
 *.app
 LR1/
 LR2/
 .DS_Store
+
+# Build directory
+/build/

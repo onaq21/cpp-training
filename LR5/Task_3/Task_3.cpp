@@ -85,7 +85,7 @@ int main() {
       cout << "The even elements from the main diagonal of your matrix: ";
       for (int i = 0; i < size; ++i) {
         int value = *(array + i);
-        cout << value << " ";
+        cout << value << ", ";
         product *= value;
       }
       cout << "\nTheir product: " << product;

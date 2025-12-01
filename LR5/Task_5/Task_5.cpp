@@ -89,7 +89,7 @@ int main() {
     size = 0;
     int* array = GetOddElementsFromEvenColumns(matrix, rows, columns, size);
 
-    if (size ==0) cout << "There are not odd elements from even columns of your matrix\n";
+    if (size == 0) cout << "There are not odd elements from even columns of your matrix\n";
     else {
       average = GetAverage(array, size);
 

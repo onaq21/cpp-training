@@ -41,6 +41,9 @@ extern "C" void __attribute__((visibility("default"))) SolveTask() {
   cout << "=============================================\n";
   cout << "              Task context menu              \n";
   cout << "---------------------------------------------\n";
+
+
+  
   cout << "Task: Compute the product of (sin(Ci) - cos(Ci) for all elements of array C using recursion that divides the array into 1/3 and 2/3 until 1 or 2 elements remain.\n";
   cout << "Completed by: Kostya Kudritsky;\n";
   cout << "Option: 9\n";
