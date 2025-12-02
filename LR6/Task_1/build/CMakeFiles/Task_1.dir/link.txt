@@ -1,0 +1,1 @@
+/usr/bin/c++  -fsanitize=address -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Task_1.dir/app/main.cpp.o CMakeFiles/Task_1.dir/src/ReadInput.cpp.o CMakeFiles/Task_1.dir/src/Sort.cpp.o -o Task_1

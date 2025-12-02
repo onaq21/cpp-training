@@ -1,0 +1,3 @@
+/Users/jeanpierre/Documents/453504/ОАиП/LR6/Task_1/build/CMakeFiles/Task_1.dir
+/Users/jeanpierre/Documents/453504/ОАиП/LR6/Task_1/build/CMakeFiles/edit_cache.dir
+/Users/jeanpierre/Documents/453504/ОАиП/LR6/Task_1/build/CMakeFiles/rebuild_cache.dir
